@@ -2,12 +2,12 @@
 # Copyright (c) 2015 Jordan Turley, CSGO Win Big. All Rights Reserved.
 
 function getDB() {
-	$dbHost = 'localhost';
-	$db     = 'jordantu_csgowinbig';
-	$dbUser = "jordantu_ztizzle";
+	$dbHost = 'dreamteam.byethost5.com';
+	$db     = 'Hamodii_GameGames';
+	$dbUser = "Hamodii_Anir";
 
 	# Get database password from outside of web root
-	$fileLoc = $_SERVER['DOCUMENT_ROOT'] . '/../../passwords.txt';
+	$fileLoc = $_SERVER['DOCUMENT_ROOT'] . '/Documents/passwords.txt';
 	if (file_exists($fileLoc)) {
 		$fh = fopen($fileLoc, 'r');
 		$jsonStr = fgets($fh);
